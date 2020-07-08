@@ -18,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    button.backgroundColor = UIColor.redColor;
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 150, 100)];
+    [button setTitle:@"点击这里查看" forState:UIControlStateNormal];
+    [button setTitleColor:UIColor.redColor forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 }
